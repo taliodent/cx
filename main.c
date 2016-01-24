@@ -38,7 +38,7 @@ int main( int argc, char *argv[])
 		appendf();
 		break;
 		case 'n': case 'N':
-		inputf();//createf();	
+		createf();	
 		break;
 		case 'i': case 'I':
 		about();
