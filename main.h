@@ -1,5 +1,5 @@
 #define INFO "\n Welcome to cx \n ==================================== \t"
-#define VERSION "1.0.0 - January 2016 \n"
+#define VERSION "1.1.0 \n"
 #define NAME "\n cx - simple line based editor \n"
 
 int about(void);
