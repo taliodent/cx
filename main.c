@@ -7,20 +7,6 @@
 
 int help(void);
 
-
-/*
-	TO DO;
-	
-* We've implemented readf() so far, which reads the file 			[DONE]
-* we need to make sure that the input for readf() is dynamic,			[DONE]
-  in other words, the user needs to be able to give a dir himself		[DONE]
-* Create a function that adds a line to an existing file 			[DONE]
-* replacel() should replace a line in an existing file				[]
-* createf() should create a new file and allow the user to input text		[CURRENT]
-* Someone please go on a Dr.Pepper run, I'm out of my favorite softdrink	[]
-*/
-	
-
 int main( int argc, char *argv[])
 {
 	int input;
@@ -42,6 +28,9 @@ int main( int argc, char *argv[])
 		break;
 		case 'i': case 'I':
 		about();
+		break;
+		case 'e': case 'E':
+		editf();
 		break;
 		default: help();
 		}
@@ -66,4 +55,5 @@ int help(void)
 	printf(" -a \t \t Append a file\n");
 	printf(" -n \t \t Create a new file\n");
 	printf(" -i \t \t Display release information\n");
+	printf(" -e \t \t Edit an existing file line by line\n");
 }
